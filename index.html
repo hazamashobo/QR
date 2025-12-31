@@ -226,153 +226,159 @@
             color: white;
         }
 
-        footer {
-            border-top: 1px solid #e0e0e0;
-            padding: 2em 0;
-            text-align: center;
-            margin-top: auto;
-            background-color: #32a9cd;
-            color: #fff;
-            font-size: 0.85em;
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
+       /* フッター */
+    footer {
+      background-color: #32a9cd;
+      color: #ffffff;
+      text-align: center;
+      padding: 1em;
+      flex-shrink: 0;
+      margin-top: auto;
+      box-sizing: border-box;
+      width: 100%;
+    }
 
-        footer p:last-child {
-            margin-top: 0.5em;
-        }
+    /* レスポンシブ */
+    @media (max-width: 768px) {
+      header {
+        padding: 1em;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
 
-        /* レスポンシブ */
-        @media (max-width: 768px) {
-            header {
-                padding: 1em;
-                justify-content: center;
-                text-align: center;
-                flex-wrap: wrap;
-            }
+      header h1 {
+        font-size: 2em;
+      }
 
-            .header-logo {
-                width: 40px;
-                height: 40px;
-            }
+      .title-wrapper {
+        width: 100%;
+      }
 
-            .header-title {
-                font-size: 1.4em;
-            }
+      .search {
+        width: 100%;
+      }
 
-            .sub-nav {
-                padding: 1em 0;
-            }
+      .search form {
+        width: 100%;
+        display: flex;
+      }
 
-            .sub-nav a {
-                font-size: 0.85em;
-                margin: 0 1em;
-            }
+      .search input {
+        width: 100%;
+        flex: 1;
+      }
 
-            main {
-                margin: 3em auto;
-                padding: 0 1.5em;
-            }
+      nav a {
+        margin: 0 0.5em;
+        font-size: 0.9em;
+      }
 
-            .header-content h1 {
-                font-size: 2em;
-            }
+      .content {
+        padding: 0 1em;
+        margin: 1em auto;
+      }
 
-            .header-content p {
-                font-size: 0.8em;
-            }
+      .page-title {
+        margin: 1em 0;
+        padding: 1em;
+      }
 
-            .divider {
-                margin: 1.5em 0;
-            }
+      .page-title h1 {
+        font-size: 1.8em;
+      }
 
-            .content p {
-                font-size: 0.95em;
-                margin-bottom: 1.2em;
-            }
+      .page-title p {
+        font-size: 1em;
+      }
 
-            .download-section {
-                margin: 3em 0;
-            }
+      .section {
+        margin: 2em 0;
+        padding: 1.5em;
+      }
 
-            button {
-                padding: 12px 35px;
-                font-size: 0.9em;
-            }
+      .section h2 {
+        font-size: 1.5em;
+      }
 
-            footer {
-                padding: 1.5em 1em;
-            }
-        }
+      .company-info th {
+        width: 40%;
+      }
 
-        @media (max-width: 480px) {
-            header {
-                padding: 0.8em;
-                flex-direction: column;
-                gap: 0.5em;
-            }
+      .company-info th,
+      .company-info td {
+        padding: 0.8em 1em;
+        font-size: 0.95em;
+      }
+    }
 
-            .header-logo {
-                width: 35px;
-                height: 35px;
-            }
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        gap: 0.5em;
+      }
 
-            .header-title {
-                font-size: 1.2em;
-                letter-spacing: 1px;
-            }
+      header h1 {
+        font-size: 1.5em;
+      }
 
-            .sub-nav {
-                padding: 0.8em 0;
-            }
+      .subtitle {
+        font-size: 0.9em;
+      }
 
-            .sub-nav a {
-                font-size: 0.75em;
-                margin: 0 0.5em;
-            }
+      .search {
+        width: 100%;
+      }
 
-            main {
-                margin: 2em auto;
-                padding: 0 1em;
-            }
+      .search input {
+        width: 100%;
+        padding: 0.5em;
+      }
 
-            .header-content {
-                margin-bottom: 2em;
-            }
+      .search button {
+        padding: 0.5em 0.8em;
+        font-size: 0.9em;
+      }
 
-            .header-content h1 {
-                font-size: 1.6em;
-                letter-spacing: 1px;
-            }
+      nav a {
+        margin: 0 0.3em;
+        font-size: 0.8em;
+      }
 
-            .header-content p {
-                font-size: 0.75em;
-            }
+      .content {
+        padding: 0 0.8em;
+        margin: 0.8em auto;
+      }
 
-            .divider {
-                margin: 1.2em 0;
-            }
+      .page-title h1 {
+        font-size: 1.5em;
+      }
 
-            .content p {
-                font-size: 0.9em;
-                margin-bottom: 1em;
-            }
+      .section {
+        margin: 1.5em 0;
+        padding: 1em;
+      }
 
-            .download-section {
-                margin: 2.5em 0;
-            }
+      .section h2 {
+        font-size: 1.3em;
+        margin-bottom: 0.8em;
+      }
 
-            button {
-                padding: 12px 30px;
-                font-size: 0.85em;
-                width: 100%;
-                max-width: 280px;
-            }
+      .section p {
+        font-size: 0.95em;
+        margin: 0.8em 0;
+      }
 
-            footer {
-                padding: 1.2em 0.8em;
-                font-size: 0.8em;
-            }
+      .company-info th,
+      .company-info td {
+        padding: 0.6em 0.8em;
+        font-size: 0.85em;
+      }
+
+      .company-info th {
+        width: 50%;
+      }
         }
     </style>
 </head>
@@ -401,8 +407,7 @@
 
   <div class="content">
     <div class="page-title">
-      <h1>IMINAL SPACE 100</h1>
-        <p>GRADUATION EXHIBITION</p>
+      <h1>GRADUATION EXHIBITION</h1>
         
     </div>
         <section class="content">
