@@ -205,9 +205,13 @@
         }
 
         .download-section {
-            text-align: center;
-            margin: 4em 0;
-        }
+  text-align: center;
+  margin: 4em 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
 
         button {
             padding: 14px 45px;
@@ -417,19 +421,27 @@
         </section>
 
         <div class="download-section">
-            <button onclick="downloadPDF()">PDFで作品を読む</button>
-        </div>
+  <button onclick="downloadPDF('pdf1')">『LIMINAL SPACE 100』を読む</button>
+  <button onclick="downloadPDF('pdf2')">研究レポートを読む</button>
+</div>
     </main>
 </div>
     <footer>
         <p>© 2025 狭間書房</p>
     </footer>
 
-    <script>
-        function downloadPDF() {
-            const pdfURL = 'https://example.com/path/to/your-file.pdf';
-            window.location.href = pdfURL;
-        }
-    </script>
+   <script>
+  function downloadPDF(type) {
+    let pdfURL = '';
+
+    if (type === 'pdf1') {
+      pdfURL = 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:fa759cab-f57a-4a9d-93f0-3f0a95bb59f4';
+    } else if (type === 'pdf2') {
+      pdfURL = 'https://acrobat.adobe.com/id/urn:aaid:sc:AP:1b379763-d757-46a2-8f17-2b8e3b86cc94';
+    }
+
+    window.location.href = pdfURL;
+  }
+</script>
 </body>
 </html>
